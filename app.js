@@ -22,3 +22,28 @@ for(let i=0;i<numbers.length;i++){
     prod = prod * numbers[i];
 }
 console.log(prod);
+// recursion
+function countDown(n) {
+    console.log(n);
+    if(n >= 1) countDown(n-1);
+  }
+  countDown(5);
+
+  function factorial(x) {
+    console.log(`factorial ${x} start`)
+    if (x < 0) return;
+    if (x === 0) return 1;
+    return x * factorial(x - 1);
+  }
+  let result = factorial(6);
+  console.log(result);
+
+  function revStr(str){
+    if (str === '') return '';
+    return revStr(str.substr(1)) + str[0];
+  }
+  let result5 = revStr('winter');
+  console.log(result5);
+//   result2 = "winter" => "inter" + w => "nter" + i=> "ret" + n=> "re"+t=>"+e ""+r
+
+//   result = f(3) => 3*2 => 2*1 => 1*1 => return 1
