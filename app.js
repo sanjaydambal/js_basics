@@ -88,7 +88,7 @@ function sumOdd(i) {
   }
   else if (i % 2 === 0) {
     return sumOdd(i - 1);
-  }
+      }
   else {
     return i + sumOdd(i - 1);
   }
@@ -128,5 +128,5 @@ console.log(exp(2, 3));
     }
     console.log(string);
   }
-  console.log(fib(10));
+  fib(10);
   
