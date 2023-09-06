@@ -52,3 +52,9 @@ var createCounter = function(n) {
     };
     
 };
+// Hello world
+var createHelloWorld = function() {
+    return function(...args) {
+        return "Hello World"
+    }
+};
