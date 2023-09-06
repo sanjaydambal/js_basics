@@ -30,3 +30,17 @@ var map = function(arr, fn) {
         return{increment,decrement,reset}
     };
 };
+// Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
+var expect = function(val) {
+    
+    return{
+        notToBe:(n)=>{
+    if(val===n) throw new Error("Equal")
+    else return true
+    },
+    toBe:(n) => {
+     if(val!==n) throw new Error ("Not Equal");
+     else return true
+    }
+    }
+};
