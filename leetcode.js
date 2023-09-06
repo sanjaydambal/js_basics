@@ -15,4 +15,18 @@ var map = function(arr, fn) {
         arr2[i]= fn(arr[i],i)
     }
     return arr2;
+    // Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
+    var createCounter = function(init) {
+        let count = init;
+         function increment(){
+            return ++count
+        }
+           function decrement(){
+           return --count
+        }
+           function reset(){
+            return (count=init)
+        }
+        return{increment,decrement,reset}
+    };
 };
