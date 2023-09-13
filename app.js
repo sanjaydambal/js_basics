@@ -143,3 +143,6 @@ const getId = (arr) => {
 };
 
 console.log(getId(arr)); // Call the function with the 'arr' argument
+
+const date = ()=>{new Date().toString};
+console.log(date)

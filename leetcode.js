@@ -58,3 +58,8 @@ var createHelloWorld = function() {
         return "Hello World"
     }
 };
+
+var argumentsLength = function(...args) {
+    let arr = [...args]
+   return arr.length
+  };
