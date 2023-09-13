@@ -130,3 +130,16 @@ console.log(exp(2, 3));
   }
   fib(10);
   
+  const arr = ["sleep", "on", "time", "wake", "up", "early"];
+
+const getId = (arr) => {
+  if (arr.length > 0) {
+    // Instead of trying to access an 'id' property, 
+    // you can simply return the length of the array + 1
+    return arr.length + 1;
+  } else {
+    return 1;
+  }
+};
+
+console.log(getId(arr)); // Call the function with the 'arr' argument
